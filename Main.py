@@ -13,6 +13,7 @@ face_detector = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 )
 
+
 # ── Step 2: Open the laptop camera ──────────────────────────
 # 0 means the default built-in laptop camera
 camera = cv2.VideoCapture(0)
@@ -45,7 +46,7 @@ while True:
         gray_frame,
         scaleFactor=1.1,
         minNeighbors=5,
-        minSize=(80, 80)
+        minSize=(30, 30)
     )
 
     face_count = len(faces)  # how many faces found in this frame
