@@ -28,7 +28,7 @@ print("✅ Camera started. Press 'Q' to quit.")
 while True:
 
     # Read one frame (photo) from the camera
-    success, frame = camera.read()
+    success, frame = camera.read()  # Success is boolean value it tells whether image capture or not
 
     if not success:
         print("❌ Failed to read from camera.")
@@ -54,7 +54,7 @@ while True:
     # ── Step 6: Draw boxes around each detected face ─────────
     for (x, y, width, height) in faces:
         # Draw green rectangle around face
-        cv2.rectangle(frame, (x, y), (x + width, y + height), (0, 255, 0), 2)
+        cv2.rectangle(frame, (x, y), (x + width, y + height), (0, 255, 0), 2) # color (0, 255, 0), thickness=2, (x, y) is starting coordinate, (x + width, y + height) is ending coordinate
 
         # Write "Face" label above the box
         cv2.putText(frame, "Face", (x, y - 10),
@@ -88,7 +88,7 @@ while True:
                 cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 1)
 
     # ── Step 10: Display the final frame on screen ────────────
-    cv2.imshow("Smart Light Control System", frame)
+    cv2.imshow("Smart Light Control System", frame) # (Title , frame)
 
     # ── Step 11: Check if user pressed 'Q' to quit ───────────
     key = cv2.waitKey(1) & 0xFF
