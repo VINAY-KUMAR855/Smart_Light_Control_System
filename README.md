@@ -17,11 +17,10 @@ smart_light_control/
 ## How It Works
 Camera → Detect Face → Decision → Display Status on Screen
 
-  📷         🧠           💡              🖥️
-  
-the "light ON/OFF" will be simulated on screen with text and colors
+The "light ON/OFF" will be simulated on screen with text and colors
 
 <img src="Overview_image.png" alt="Working" width="400"/>
+
 ## Tools You'll Use
 Python is your language. Three main libraries:
 - OpenCV — accesses camera, detects faces, shows video
