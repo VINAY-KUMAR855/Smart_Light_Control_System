@@ -10,6 +10,12 @@ smart_light_control/
 │
 ├── main.py             ← Main program (run this)
 ├── requirements.txt    ← Python libraries needed
+├── PPT.pdf             ←  Presentation pdf
+├── Sample_Output/
+	│
+	├─ Output1.png      ← Sample output image
+	├─ Output2.png
+├─ Smart Light Control System.pdf     ← overview of project
 └── README.md           ← This file
 ```
 
