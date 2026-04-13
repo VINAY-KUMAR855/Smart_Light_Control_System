@@ -1,0 +1,5 @@
+[server]
+headless = true
+
+[webrtc]
+enable = true
