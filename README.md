@@ -81,7 +81,7 @@ http://localhost:8501
 
 ## 🖼️ Demo
 
-<img src="Sample_Output/output3.png" alt="Demo" width="400"/>
+<img src="Sample_Output/output3.png" alt="Demo" width="600"/>
 
 ---
 
