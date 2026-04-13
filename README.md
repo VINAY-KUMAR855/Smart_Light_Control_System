@@ -49,7 +49,7 @@ smart_light_control/
 ## ⚙️ Installation
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/VINAY-KUMAR855/Smart_Light_Control_System.git
 cd smart_light_control
 pip install -r requirements.txt
 ```
