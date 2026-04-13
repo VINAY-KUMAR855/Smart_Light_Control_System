@@ -1,62 +1,118 @@
 # 💡 Smart Light Control System
-### A system that uses your laptop camera to detect if anyone is in the room → if yes, lights ON; if no one, lights OFF. Status is displayed on screen.
+
+A real-time computer vision project that detects human presence using a laptop camera and automatically controls light status.
+
+If a face is detected → **LIGHT ON**
+If no face is detected → **LIGHT OFF**
 
 ---
 
-## 📁 Folder Structure
+## 🚀 Features
+
+* 🎥 Real-time face detection using OpenCV
+* 💡 Automatic light ON/OFF logic
+* 🖥️ Interactive UI using Streamlit
+* 📊 Displays face count and status inside video frame
+* ⚡ Works on basic laptops (no GPU required)
+
+---
+
+## 🧠 How It Works
+
+Camera → Face Detection → Decision → Display (UI)
+
+* Captures live video from camera
+* Detects faces using Haar Cascade
+* Applies decision logic
+* Displays result with visual overlay
+
+<img src="Overview_image.png" alt="Working" width="400"/>
+
+---
+
+## 📁 Project Structure
 
 ```
 smart_light_control/
 │
-├── main.py             ← Main program (run this)
-├── requirements.txt    ← Python libraries needed
+├── app.py              ← Streamlit app (main file)
+├── requirements.txt    ← Dependencies
 ├── PPT.pdf             ←  Presentation pdf
 ├── Sample_Output/
-	│
-	├─ Output1.png      ← Sample output image
-	├─ Output2.png
-├─ Smart Light Control System.pdf     ← overview of project
-└── README.md           ← This file
+│   ├── Output1.png
+│   ├── Output2.png
+├── README.md
 ```
 
 ---
-## How It Works
-Camera → Detect Face → Decision → Display Status on Screen
 
-The "light ON/OFF" will be simulated on screen with text and colors
+## ⚙️ Installation
 
-<img src="Overview_image.png" alt="Working" width="400"/>
+```bash
+git clone <your-repo-link>
+cd smart_light_control
+pip install -r requirements.txt
+```
 
-## Tools You'll Use
-Python is your language. Three main libraries:
-- OpenCV — accesses camera, detects faces, shows video
-- Haar Cascade — a pre-trained face detector (comes free with OpenCV, no training needed)
-- No internet needed, no GPU needed — runs on any basic laptop
+---
 
+## ▶️ Run the App
 
+```bash
+streamlit run app.py
+```
 
-## 🎮 How to Use
+Then open:
 
-| Action | Result |
-|--------|--------|
-| Sit in front of camera | Green box appears, **LIGHT: ON** shown |
-| Leave camera view | **LIGHT: OFF** shown in red |
-| Press `Q` | Program exits |
+```
+http://localhost:8501
+```
+
+---
+
+## 🎮 Usage
+
+* Click **Start Camera**
+* Sit in front of camera → 💡 LIGHT ON
+* Leave camera → 💡 LIGHT OFF
+* Click **Stop Camera** to exit
+
+---
+
+## 🖼️ Demo
+
+<img src="Sample_Output/output3.png" alt="Demo" width="400"/>
 
 ---
 
 ## ❌ Common Errors & Fixes
 
-| Error | Fix |
-|-------|-----|
-| `Could not open camera` | Close browser/Zoom that might be using camera |
-| `No module named cv2` | Run `pip3 install opencv-python` again |
-| Camera opens but no face detected | Make sure your face is well lit, move closer |
+| Error              | Solution                                  |
+| ------------------ | ----------------------------------------- |
+| Camera not opening | Close Zoom/browser using camera           |
+| No module cv2      | Install using `pip install opencv-python` |
+| Slow performance   | Close background apps                     |
 
 ---
 
-## 🚀 Future Scope
-- Connect to **Arduino** to control real lights/relays
-- Add **motion sensor** as backup
-- Count people and log energy saved
-- Send **alert notification** if lights left ON too long
+## 🚀 Future Improvements
+
+* 🔌 Connect with Arduino for real light control
+* 🧠 Replace Haar Cascade with deep learning models
+* 📊 Add analytics dashboard
+* 🌐 Deploy on cloud
+
+---
+
+## 🧑‍💻 Tech Stack
+
+* Python
+* OpenCV
+* Streamlit
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates how computer vision can be used for real-world automation like energy saving and smart environments.
+
