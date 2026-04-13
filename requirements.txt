@@ -1,2 +1,5 @@
 streamlit
 opencv-python-headless
+streamlit-webrtc
+av==10.0.0
+numpy
